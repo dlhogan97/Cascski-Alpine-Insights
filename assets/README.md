@@ -50,6 +50,28 @@ Note: Archive images are excluded from git tracking by default (see `.gitignore`
 - **No accumulation** of old files (unless archived)
 - **Fast workflow** for weekly updates
 
+## CW3E West-WRF Snow Images
+
+The `image_scraper.py` script can automatically download CW3E West-WRF 3hr snow meteogram panel images for Washington ski areas. Images are saved to `assets/images/cw3e/` with site-based subdirectories.
+
+### Usage
+
+Download images for all sites:
+```bash
+python3 assets/image_scraper.py --cw3e-westwrf-snow
+```
+
+Download for specific sites only:
+```bash
+python3 assets/image_scraper.py --cw3e-westwrf-snow --sites "paradis,stevens,crystal"
+```
+
+Available sites: `paradis`, `stevens`, `crystal`, `snoqualmie`, `baker`, `white`
+
+Images are saved as:
+- Canonical filename: `assets/images/cw3e/{site}/{filename}.png` (overwritten on each run)
+- Timestamped archive: `assets/images/cw3e/{site}/{filename}_YYYYmmdd_HHMMSS.png`
+
 ## Tips
 
 - Keep images reasonably sized (< 500KB when possible)
