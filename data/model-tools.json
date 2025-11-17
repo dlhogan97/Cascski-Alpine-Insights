@@ -1,0 +1,37 @@
+[
+  {
+    "name": "GFS Temperature",
+    "description": "Global Forecast System temperature data at multiple elevation bands",
+    "icon": "🌡️",
+    "url": "#",
+    "status": "Updated daily"
+  },
+  {
+    "name": "HRRR Snowfall",
+    "description": "High-Resolution Rapid Refresh model for short-term snowfall prediction",
+    "icon": "❄️",
+    "url": "#",
+    "status": "Hourly updates"
+  },
+  {
+    "name": "NAM Wind Analysis",
+    "description": "North American Mesoscale model wind speed and direction forecasts",
+    "icon": "💨",
+    "url": "#",
+    "status": "4x daily"
+  },
+  {
+    "name": "WRF Precipitation",
+    "description": "Weather Research and Forecasting model for detailed precipitation forecasts",
+    "icon": "🌧️",
+    "url": "#",
+    "status": "Updated 2x daily"
+  },
+  {
+    "name": "SNOTEL Data",
+    "description": "Real-time snow water equivalent and temperature from mountain stations",
+    "icon": "📊",
+    "url": "#",
+    "status": "Real-time"
+  }
+]

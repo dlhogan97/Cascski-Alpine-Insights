@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Tools - Cascski Alpine Insights</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🎿 Cascski Alpine Insights</h1>
+        <p class="tagline">Washington Ski Area Weather & Snow Forecasts</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#latest-post">Latest Forecast</a></li>
+            <li><a href="index.html#ski-areas">Ski Areas</a></li>
+            <li><a href="posts/archive.html">Archive</a></li>
+            <li><a href="verification.html">Verification</a></li>
+            <li><a href="model-tools.html" class="active">Model tools</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="tools-section">
+            <div class="container">
+                <h2>Weather Models & Forecast Tools</h2>
+                <p class="muted">Explore the weather models and analysis tools used to create our ski forecasts</p>
+                
+                <div class="tools-controls">
+                    <input type="search" id="tools-search" placeholder="Search tools...">
+                </div>
+
+                <div id="tools-list" class="tools-grid">
+                    <!-- Tools will be rendered here by JavaScript, or fallback HTML below -->
+                    <a href="#" class="tool-card">
+                        <div class="tool-card__icon">🌡️</div>
+                        <div class="tool-card__body">
+                            <h3>GFS Temperature</h3>
+                            <p>Global Forecast System temperature data at multiple elevation bands</p>
+                            <div class="tool-meta">
+                                <span class="btn">View</span>
+                                <span class="status">Updated daily</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="tool-card">
+                        <div class="tool-card__icon">❄️</div>
+                        <div class="tool-card__body">
+                            <h3>HRRR Snowfall</h3>
+                            <p>High-Resolution Rapid Refresh model for short-term snowfall prediction</p>
+                            <div class="tool-meta">
+                                <span class="btn">View</span>
+                                <span class="status">Hourly updates</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="tool-card">
+                        <div class="tool-card__icon">💨</div>
+                        <div class="tool-card__body">
+                            <h3>NAM Wind Analysis</h3>
+                            <p>North American Mesoscale model wind speed and direction forecasts</p>
+                            <div class="tool-meta">
+                                <span class="btn">View</span>
+                                <span class="status">4x daily</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Dawg Winter Weather Blog | Washington Ski Area Forecasts</p>
+        <p>For educational purposes. Always check official sources and avalanche forecasts before heading to the mountains.</p>
+    </footer>
+
+    <script src="scripts/model-tools.js"></script>
+</body>
+</html>
